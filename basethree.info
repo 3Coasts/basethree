@@ -10,6 +10,7 @@ regions[menu] = Menu
 regions[footer] = Footer
 
 stylesheets[all][] = css/reset.css.less
+stylesheets[all][] = css/drupal.css
 stylesheets[all][] = css/base.css.less
 stylesheets[all][] = css/styleguide.css.less
 stylesheets[all][] = css/global.css.less
