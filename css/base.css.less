@@ -1,0 +1,72 @@
+.grid (@width) {
+	.spanX (@index) when (@index > 0) {
+    	(~".grid-@{index}") { width: (@width * @index) + ((20 * @index) - 20); }
+    	.spanX(@index - 1);
+  	}
+	.spanX (0){}
+	.spanX (12);
+}
+
+.prefix (@width) {
+	.spanX (@index) when (@index > 0) {
+    	(~".prefix-@{index}") { padding-left: (@width * @index) + ((20 * @index)); }
+    	.spanX(@index - 1);
+  	}
+  	.spanX (0){}
+	.spanX (11);
+}
+
+.push (@width) {
+	.spanX (@index) when (@index > 0) {
+    	(~".push-@{index}") { padding-right: (@width * @index) + ((20 * @index)); }
+    	.spanX(@index - 1);
+  	}
+  	.spanX (0){}
+	.spanX (11);
+}
+
+
+.container{
+	background-repeat: repeat-y;
+	padding: 0 10px;
+}
+.container:after{
+	// Clear Fix
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	// END Clear Fix
+}
+
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape) {
+	.container{
+		padding:0px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 720px;
+		background-image:url('../img/720-overlay.png');
+		.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12{
+			float:left;
+			margin-left:10px;
+			margin-right:10px;
+			&.alpha{ margin-left:0px; }
+			&.omega{ margin-right:0px; }
+		}
+		.grid (40px);
+		.prefix (40px);
+		.push (40px);
+	}	
+}
+
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape) {
+	.container{
+		width:960px;
+		background-image:url('../img/960-overlay.png'); 
+		.grid (60px);
+		.prefix (60px);
+		.push (60px);
+	}
+}

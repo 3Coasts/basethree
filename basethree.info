@@ -1,0 +1,20 @@
+name = Base Three
+description = Base Theme developed for 3Coasts
+core = 7.x
+engine = phptemplate
+
+regions[content] = Content
+regions[help] = Help
+regions[header] = Header
+regions[menu] = Menu
+regions[footer] = Footer
+
+stylesheets[all][] = css/reset.css.less
+stylesheets[all][] = css/base.css.less
+stylesheets[all][] = css/styleguide.css.less
+stylesheets[all][] = css/global.css.less
+stylesheets[all][] = css/narrow.css.less
+stylesheets[all][] = css/normal.css.less
+
+scripts[] = js/scripts.js
+scripts[] = js/jumpmenu.js
