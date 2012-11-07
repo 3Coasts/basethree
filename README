@@ -18,8 +18,7 @@ These are some notes that I'm documenting that steps to create a responsive them
 description = Theme Description 
 base theme = tao 
 core = 7.x 
-engine = phptemplate 
-</pre></code>
+engine = phptemplate</pre></code>
 
 - Create the following folders: css, js, templates, img
 - Add the necessary regions for your theme. Example below.
