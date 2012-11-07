@@ -30,11 +30,16 @@ These are some notes that I'm documenting that steps to create a responsive them
 
 - Here is some quick commands for trusting fools. To be run in the root of your clean install.
 	
+	drush qd new_basethree_site
+	cd new_basethree_site
 	git clone --branch master 3to@3to.me:git/themes/basethree.git
 	mv basethree sites/all/themes/
-	drush dl less libraries admin
-	drush dis shortcut dashboard toolbar overlay
+	drush dl less libraries admin tao
+	drush en less libraries admin -y
+	drush dis shortcut dashboard toolbar overlay -y
 	git clone https://github.com/leafo/lessphp.git
-	mv lessphp sites/all/libraries/
+	mkdir sites/all/libraries
+	mv lessphp sites/all/libraries/lessphp
 	git clone --branch master 3to@3to.me:git/modules/basethree_layouts.git
 	mv basethree_layouts sites/all/modules/
+	drush vset theme_default basethree
