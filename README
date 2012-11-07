@@ -14,11 +14,11 @@ These are some notes that I'm documenting that steps to create a responsive them
 - Download Base Three
 - Create a info file with the following
 
-	name = Theme Name
-	description = Theme Description
-	base theme = tao
-	core = 7.x
-	engine = phptemplate
+	name = Theme Name 
+	description = Theme Description 
+	base theme = tao 
+	core = 7.x 
+	engine = phptemplate 
 
 - Create the following folders: css, js, templates, img
 - Add the necessary regions for your theme. Example below.
