@@ -28,3 +28,13 @@ These are some notes that I'm documenting that steps to create a responsive them
 	regions[content] = Content
 	regions[footer] = Footer
 
+- Here is some quick commands for trusting fools. To be run in the root of your clean install.
+	
+	git clone --branch master 3to@3to.me:git/themes/basethree.git
+	mv basethree sites/all/themes/
+	drush dl less libraries admin
+	drush dis shortcut dashboard toolbar overlay
+	git clone https://github.com/leafo/lessphp.git
+	mv lessphp sites/all/libraries/
+	git clone --branch master 3to@3to.me:git/modules/basethree_layouts.git
+	mv basethree_layouts sites/all/modules/
