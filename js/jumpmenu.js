@@ -3,13 +3,13 @@
 	Drupal.behaviors.jumpmenu = {
 		attach: function (context) {
 			// JUMP MENU
-			if(!$("#menu .jumpmenu").length){
-				$("#menu ul.menu").parent().append("<div class='jumpmenu'><select></select></div>");
-				$("#menu ul.menu li a").each(function(){
+			if(!$(".main-menu .jumpmenu").length){
+				$(".main-menu").parent().append("<div class='jumpmenu'><select></select></div>");
+				$(".main-menu li a").each(function(){
 					if($(this).hasClass("active")){
-						$("#menu div.jumpmenu select").append("<option value='"+$(this).attr("href")+"' selected='selected'>"+$(this).text()+"</option>")	
+						$(".main-menu").parent().find("div.jumpmenu select").append("<option value='"+$(this).attr("href")+"' selected='selected'>"+$(this).text()+"</option>")	
 					}else{
-						$("#menu div.jumpmenu select").append("<option value='"+$(this).attr("href")+"'>"+$(this).text()+"</option>")	
+						$(".main-menu").parent().find("div.jumpmenu select").append("<option value='"+$(this).attr("href")+"'>"+$(this).text()+"</option>")	
 					}
 				});
 				$("div.jumpmenu select").change(function(){

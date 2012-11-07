@@ -15,6 +15,10 @@
     <div id='menu'>
         <div class='container'>
             <div class='grid-12'>
+                <?php if (isset($main_menu)) : ?>
+                    <?php print theme('links', array('links' => $main_menu, 'attributes' => array('class' => 'links main-menu'))) ?>
+                <?php endif; ?>
+
                 <?php if ($page['menu']): ?>
                     <?php print render($page['menu']); ?>
                 <?php endif; ?>
