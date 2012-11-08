@@ -15,6 +15,7 @@ stylesheets[all][] = css/styleguide.css.less
 stylesheets[all][] = css/global.css.less
 stylesheets[all][] = css/narrow.css.less
 stylesheets[all][] = css/normal.css.less
+stylesheets[all][] = css/wide.css.less
 
 scripts[] = js/scripts.js
 scripts[] = js/jumpmenu.js
