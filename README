@@ -6,6 +6,9 @@ These are some notes that I'm documenting that steps to create a responsive them
 	- LESS
 	- libraries
 	- admin
+- Helpful Modules:
+	- adaptive_image
+	- flexslider
 - Need to disable these modules
 	- shortcut
 	- dashboard
@@ -43,3 +46,6 @@ mv lessphp sites/all/libraries/lessphp
 git clone --branch master 3to@3to.me:git/modules/basethree_layouts.git
 mv basethree_layouts sites/all/modules/
 drush vset theme_default basethree</code></pre>
+
+- This theme includes Google's css3-mediaqueries.js library to make IE8 and below understand CSS media queries.  However <strong>this only works when CSS caching is enabled.</strong>
+- Suggestion is to develop the site as normal, then enable CSS caching prior to debugging for IE.
