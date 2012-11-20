@@ -12,9 +12,23 @@ projects[libraries][subdir] = contrib
 projects[menu_block][subdir] = contrib
 projects[panels][subdir] = contrib
 projects[views][subdir] = contrib
+projects[adaptive_image][subdir] = contrib
+projects[advanced_help][subdir] = contrib
+projects[backup_migrate][subdir] = contrib
+projects[features][subdir] = contrib
+projects[markdown][subdir] = contrib
+projects[mollom][subdir] = contrib
+projects[strongarm][subdir] = contrib
+projects[views_bulk_operations][subdir] = contrib
+projects[webform][subdir] = contrib
+projects[addressfield][subdir] = contrib
+projects[google_analytics][subdir] = contrib
+projects[link][subdir] = contrib
+projects[email][subdir] = contrib
+projects[menu_block][subdir] = contrib
 
 ; Themes
-projects[tao][version] = "3.0-beta4"
+projects[tao][type] = "theme"
 
 ; Modules
 projects[basethree_layouts][type] = "module"
